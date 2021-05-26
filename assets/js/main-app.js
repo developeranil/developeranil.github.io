@@ -8307,8 +8307,8 @@ function sendMail() {
 </body>\
 </html>';
     Email.send({
-      SecureToken: "d54da005-c10f-4d97-9420-3244d9614699",
-      To: val_email,
+      SecureToken: "b0c18304-e0ac-4da0-978b-31f556d23ce2",
+      To: "akwebds@gmail.com",
       From: "ka020694@gmail.com",
       Subject: "New Lead on Contact Form: - " + val_fullname,
       Body: email_temp,
