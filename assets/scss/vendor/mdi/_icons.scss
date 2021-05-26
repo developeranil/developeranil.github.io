@@ -1,0 +1,10 @@
+@each $key, $value in $cw-icons {
+    .#{$cw-css-prefix}-#{$key}:before {
+        content: char($value);
+    }
+}
+
+.#{$cw-css-prefix}-blank:before {
+    content: "\F68C";
+    visibility: hidden;
+}

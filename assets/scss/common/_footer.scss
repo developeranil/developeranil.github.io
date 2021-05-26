@@ -1,0 +1,154 @@
+.mainfooter{
+    @include padding(60px 0 0);
+    background: var(--gray-900);
+    .footer-column{
+        .footer-logo-txt{
+            font-size: rem(33);
+            color: var(--color-white);
+            font-family: var(--font-name-heading);
+            font-weight: var(--font-weight-heading-one);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            small{
+                display: block;
+                font-size: rem(18);
+                letter-spacing: normal;
+                text-transform: capitalize;
+            }
+        }
+        .footer-heading{
+            font-size: rem(18);
+            margin-bottom: $spacer;
+            text-transform: capitalize;
+            color: var(--color-white);
+        }
+        .footer-content{
+            p{
+                font-size: rem(14);
+                color: var(--color-white);
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    font-size: rem(14);
+                    color: var(--color-white);
+                    &+li{
+                        margin-top: rem(10);
+                    }
+                    a{
+                        color: var(--color-white);
+                        &:hover{
+                            color: var(--gray-500);
+                        }
+                    }
+                }
+            }
+            .footer-social-icon{
+                a{
+                    font-size: rem(20);
+                    text-align: center;
+                    width: 31px;
+                    border-radius: rem(30);
+                    display: inline-block;
+                    &:hover{
+                        background: var(--color-white);
+                        i:before{
+                            background-image: linear-gradient( 45deg , var(--theme-color-primary), var(--theme-color-secondary));
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        margin-top: rem(60);
+        @include padding(20px 15px);
+        border-top: solid 1px var(--gray-800);
+        text-align: center;
+        p{
+            font-size: rem(14);
+            color: var(--gray-500);
+            line-height: 2;
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 991px){
+        .col-sm-4{
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: rem(30);
+        }
+        .col-sm-3{
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+        .col-sm-2{
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+
+    @media (max-width: 767px){
+        @include padding(40px 0 0);
+        .col-sm-4{
+            .footer-column{
+                .footer-logo-txt{
+                    img{
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+
+        .copyright{
+            margin-top: rem(40);
+            p{
+                font-size: rem(12);
+            }
+        }
+    }
+
+    @media (max-width: 420px){
+        .col-sm-3{
+            flex: 0 0 100%;
+            max-width: 100%;
+            &:nth-child(2){
+                .footer-content{
+                    ul{
+                        li{
+                            display: inline-block;
+                            +li{
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                flex: 0 0 70%;
+                max-width: 70%;
+                margin-top: rem(30);
+            }
+        }
+        .col-sm-2{
+            flex: 0 0 30%;
+            max-width: 100%;
+            margin-top: rem(30);
+        }
+
+        .copyright{
+            text-align: left;
+            padding-right: rem(50);
+            p{
+                font-size: rem(12);
+            }
+        }
+    }
+}

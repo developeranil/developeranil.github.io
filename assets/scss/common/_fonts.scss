@@ -1,0 +1,65 @@
+$font-filename:         "codeweb";
+$font-name-heading:     "Code Web Font";
+$font-name-para:        "Code Web Font Para";
+$font-family:           "codewebfont";
+$font-path:             "../fonts" !default;
+$font-version:          "1.0" !default;
+
+/*!
+*   Headings
+*   bold
+*/
+@font-face {
+  font-family: '#{$font-name-heading}';
+  src: url('#{$font-path}/#{$font-filename}-b.eot?v=#{$font-version}');
+  src: url('#{$font-path}/#{$font-filename}-b.eot?#iefix&v=#{$font-version}') format('embedded-opentype'),
+    url('#{$font-path}/#{$font-filename}-b.woff2?v=#{$font-version}') format('woff2'),
+    url('#{$font-path}/#{$font-filename}-b.woff?v=#{$font-version}') format('woff'),
+    url('#{$font-path}/#{$font-filename}-b.ttf?v=#{$font-version}') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/*!
+*   Headings
+*   Medium
+*/
+@font-face {
+  font-family: '#{$font-name-heading}';
+  src: url('#{$font-path}/#{$font-filename}-m.eot?v=#{$font-version}');
+  src: url('#{$font-path}/#{$font-filename}-m.eot?#iefix&v=#{$font-version}') format('embedded-opentype'),
+    url('#{$font-path}/#{$font-filename}-m.woff2?v=#{$font-version}') format('woff2'),
+    url('#{$font-path}/#{$font-filename}-m.woff?v=#{$font-version}') format('woff'),
+    url('#{$font-path}/#{$font-filename}-m.ttf?v=#{$font-version}') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*!
+*   Paragraphs
+*   regular
+*/
+@font-face {
+  font-family: '#{$font-name-para}';
+  src: url('#{$font-path}/#{$font-filename}-g.eot?v=#{$font-version}');
+  src: url('#{$font-path}/#{$font-filename}-g.eot?#iefix&v=#{$font-version}') format('embedded-opentype'),
+    url('#{$font-path}/#{$font-filename}-g.woff2?v=#{$font-version}') format('woff2'),
+    url('#{$font-path}/#{$font-filename}-g.woff?v=#{$font-version}') format('woff'),
+    url('#{$font-path}/#{$font-filename}-g.ttf?v=#{$font-version}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*!
+*   Paragraphs
+*   light
+*/
+@font-face {
+  font-family: '#{$font-name-para}';
+  src: url('#{$font-path}/#{$font-filename}-gl.eot?v=#{$font-version}');
+  src: url('#{$font-path}/#{$font-filename}-gl.eot?#iefix&v=#{$font-version}') format('embedded-opentype'),
+    url('#{$font-path}/#{$font-filename}-gl.woff2?v=#{$font-version}') format('woff2'),
+    url('#{$font-path}/#{$font-filename}-gl.woff?v=#{$font-version}') format('woff'),
+    url('#{$font-path}/#{$font-filename}-gl.ttf?v=#{$font-version}') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

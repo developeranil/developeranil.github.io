@@ -1,0 +1,217 @@
+// Swipe Line
+@-webkit-keyframes swipe-line {
+  0% {
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  66% {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes swipe-line {
+  0% {
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  66% {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+// Slider dots hover
+@-webkit-keyframes animNavModalHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animNavModalHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Scroll down arrow
+@-webkit-keyframes downArrow {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(5px);
+    opacity: 0.75;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(15px);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0.1;
+  }
+}
+
+@keyframes downArrow {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(5px);
+    opacity: 0.75;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(15px);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0.1;
+  }
+}
+
+// LeftClose
+@-webkit-keyframes LeftClose {
+  100% {
+    -webkit-transform: translateY(22px) translateX(22px) rotate(-45deg);
+    transform: translateY(22px) translateX(22px) rotate(-45deg);
+  }
+}
+@keyframes LeftClose {
+  100% {
+    -webkit-transform: translateY(22px) translateX(22px) rotate(-45deg);
+    transform: translateY(22px) translateX(22px) rotate(-45deg);
+  }
+}
+
+// RightClose
+@-webkit-keyframes RightClose {
+  100% {
+    -webkit-transform: translateY(0px) translateX(0px) rotate(45deg);
+    transform: translateY(0px) translateX(0px) rotate(45deg);
+  }
+}
+@keyframes RightClose {
+  100% {
+    -webkit-transform: translateY(22px) translateX(-22px) rotate(45deg);
+    transform: translateY(22px) translateX(-22px) rotate(45deg);
+  }
+}
+
+
+// logo animation
+/* Google chrome */
+@-webkit-keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #fe1d59;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fe1d59;
+  }  
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #fe1d59;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #fe1d59;
+  }  
+}
+
+@-webkit-keyframes svg-text-anim1 {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #8c0150;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #8c0150;
+  }
+  
+}
+/* Most browsers */
+@keyframes svg-text-anim1 {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #8c0150;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #8c0150;
+  }  
+}

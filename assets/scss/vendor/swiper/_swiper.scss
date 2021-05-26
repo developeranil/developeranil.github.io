@@ -1,0 +1,10 @@
+@import "functions";
+
+$themeColor: #007aff !default;
+$colors: (white: #ffffff, black: #000000) !default;
+
+@import "core";
+
+//IMPORT_COMPONENTS
+@import "pagination";
+@import "navigation";

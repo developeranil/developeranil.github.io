@@ -1,0 +1,38 @@
+.about-content{
+    .mypc-wrapper{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: var(--gray-300);
+        img{
+            max-width: 100%;
+        }
+    }    
+}
+
+.myProcess{
+    background: var(--gray-100);
+    .col-sm-6{
+        margin-bottom: rem(50);
+        .process-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .process-icon{
+                flex: 0 0 150px;
+                max-width: 150px;
+                line-height: 150px;
+                border-radius: rem(100);
+                text-align: center;
+                img{
+                    max-height: 80px;
+                }
+            }
+            .process-content{
+                flex: 0 0 calc(100% - 200px);
+                max-width: calc(100% - 200px);
+            }
+        }
+    }
+}

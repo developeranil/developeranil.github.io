@@ -1,0 +1,39 @@
+// animation with options
+@mixin animation($property, $value, $prefixes:()){
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+// all browsers prefix
+@mixin prefix($property, $prefixes:(), $value...){
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+// PX to REM function
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+// Padding and Margin
+@mixin padding($values...) {    
+    @each $var in $values {
+        padding: #{$var};
+    }
+}
+@mixin margin($values...) {    
+    @each $var in $values {
+        margin: #{$var};
+    }
+}
+
+// Transparent function
+@function color-tp($color, $tp){
+    @return rgba($color, $tp);
+}

@@ -1,0 +1,44 @@
+.hire-me{
+    .hire-content{
+        p{
+            color: var(--gray-800);
+            font-size: rem(20);
+        }
+    }
+
+    @media (max-width: 991px){
+        .hire-content{
+            p{
+                font-size: rem(18);
+            }
+        }
+        .col-sm-5{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .hire-content{
+            p{
+                font-size: $spacer;
+            }
+        }
+    }
+
+    @media (max-width: 639px){
+        .col-sm-7{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .col-sm-5{
+            flex: 0 0 100%;
+            max-width: 100%;
+            img{
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// Font
+@import "common/fonts";
+
+//Bootstrap Latest
+@import "vendor/bootstrap/bootstrap-grid";
+@import "vendor/bootstrap/bootstrap-reboot";
+@import "vendor/bootstrap/bootstrap";
+
+//Font Icon
+@import "vendor/mdi/materialdesignicons";
+
+//Swiper
+@import "vendor/swiper/swiper";
+
+//Common
+@import "common/mixin";
+@import "common/keyframes";
+@import "common/com";
+@import "common/header";
+@import "common/nav";
+@import "common/footer";
+@import "common/inner-banner";
+
+//Homepage
+@import "home/slider";
+@import "home/services";
+@import "home/work";
+@import "home/hire";
+@import "home/work-together";
+
+// Inner pages
+@import "inner-pages/contact-page";
+@import "inner-pages/about-page";

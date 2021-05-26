@@ -1,0 +1,113 @@
+.contact-form{
+    .form-box{
+        border-radius: rem(10);
+        background: var(--gray-200);
+        @include padding(rem(50));
+        .form-heading{
+            color: var(--gray-900);
+            font-size: rem(32);
+            line-height: 1.2;
+            font-family: var(--font-name-heading);
+            font-weight: var(--font-weight-heading-one);
+            margin-bottom: rem(10);
+        }
+        .form-sub-heading{
+            color: var(--gray-900);
+            font-size: rem(20);
+            font-family: var(--font-name-para);
+            font-weight: var(--font-weight-para-one);
+        }
+        form{
+            margin-top: rem(30);
+            label{
+                font-size: rem(18);
+                font-weight: var(--font-weight-para-three);
+                margin-bottom: var(--spacer);
+            }
+            .custom-control{
+                padding-left: 2rem;
+                .custom-control-label{
+                    font-size: var(--spacer);
+                    font-weight: var(--font-weight-para-one);
+                    &:before{
+                        width: rem(20);
+                        height: rem(20);
+                        top: 2px;
+                        left: -2rem;
+                        border-color: color-tp($theme-primary-color, 0.5);
+                    }
+                    &:after{
+                        width: rem(20);
+                        height: rem(20);
+                        top: 2px;
+                        left: -2rem;
+                    }
+                }
+                &.error{
+                    .custom-control-label{
+                        &:before{
+                            border-color: var(--color-red);
+                            background-color: #f8d7da;
+                        }
+                    }
+                }
+            }
+            .form-group{
+                margin-bottom: $spacer*2;
+            }
+            textarea.form-control{
+                height: rem(120);
+                resize: none;
+            }
+            .form-control{
+                height: 50px;
+                border-color: color-tp($theme-primary-color, 0.5);
+            }            
+            .error{
+                border-color: var(--color-red);
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .form-box{
+            @include padding(rem(30));
+            .form-heading{
+                font-size: rem(28);
+            }
+            .form-sub-heading{
+                font-size: rem(18);
+            }
+            form{
+                label{
+                    font-size: var(--spacer);
+                }
+                .form-group{
+                    .col-6{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 599px){
+        .form-box{
+            @include padding(rem(20));
+            .form-heading{
+                font-size: rem(26);
+            }
+            .form-sub-heading{
+                font-size: var(--spacer);
+            }
+            form{
+                label{
+                    margin-bottom: rem(10);
+                }
+                .form-group{
+                    margin-bottom: $spacer;
+                }
+            }
+        }
+    }
+}
