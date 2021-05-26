@@ -133,7 +133,7 @@ function sendMail() {
                                     <table width="100%">\
                                         <tr>\
                                             <td align="center" valign="top">\
-                                                <a href="https://www.credorax.com/blog/" target="_blank"><img src="assets/images/common/logo-with-name-web.png" width="180" alt="Code Web"></a>\
+                                                <a href="https://developeranil.github.io/" target="_blank"><img src="https://developeranil.github.io/assets/images/common/logo-with-name-web.png" width="180" alt="Code Web"></a>\
                                             </td>\
                                         </tr>\
                                     </table>\
@@ -142,18 +142,18 @@ function sendMail() {
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">\
                                         <tr>\
                                             <td>\
-                                                <h3>Hey! We received a new lead from ' + val_fullname +'.</h3>\
+                                                <h3>Hey! We received a new lead from ' + val_fullname + '.</h3>\
                                             </td>\
                                         </tr>\
                                         <tr>\
                                             <td>\
                                                 <div id="postImage">\
-                                                    <p><strong>Name: </strong> '+ val_fullname +'</p>\
-                                                    <p><strong>Email: </strong> '+ val_email +'</p>\
-                                                    <p><strong>Company: </strong> '+ val_company +'</p>\
-                                                    <p><strong>Website: </strong> '+ val_website +'</p>\
-                                                    <p><strong>Service: </strong>' + service_name +'</p>\
-                                                    <p><strong>Message: </strong> '+ val_message +'</p>\
+                                                    <p><strong>Name: </strong> ' + val_fullname + '</p>\
+                                                    <p><strong>Email: </strong> ' + val_email + '</p>\
+                                                    <p><strong>Company: </strong> ' + val_company + '</p>\
+                                                    <p><strong>Website: </strong> ' + val_website + '</p>\
+                                                    <p><strong>Service: </strong> ' + service_name + '</p>\
+                                                    <p><strong>Message: </strong> ' + val_message + '</p>\
                                                 </div>\
                                             </td>\
                                         </tr>\
