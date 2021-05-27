@@ -182,7 +182,7 @@ function sendMail() {
         alert("Your mail has been send. Thank you for connecting.");
       } else {
         console.error(message);
-        alert("There is error at sending message. ");
+        alert("There is error at sending message. Try otther SMTP server. ");
       }
     });
   }
