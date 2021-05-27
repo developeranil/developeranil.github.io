@@ -124,60 +124,24 @@ function sendMail() {
     </div>\
 </body>\
 </html>';
-    // Email.send({
-    //   Host: "smtp.netcorecloud.net",
-    //   Username: "ka020694",
-    //   Password: "ka020694_96c40d2f1645e3a980cefb2e5330e4f3",
-    //   To: "akwebds@gmail.com",
-    //   From: "ka020694@gmail.com",
-    //   Subject: "New Lead on Contact Form: - " + val_fullname,
-    //   Body: email_temp,
-    // }).then((message) => {
-    //   //console.log (message);
-    //   if (message == "OK") {
-    //     alert("Your mail has been send. Thank you for connecting.");
-    //   } else {
-    //     console.error(message);
-    //     alert("There is error at sending message. Try otther SMTP server. ");
-    //   }
-    // });
+    Email.send({
+      Host: "smtp.netcorecloud.net",
+      Username: "ka020694",
+      Password: "ka020694_96c40d2f1645e3a980cefb2e5330e4f3",
+      To: "akwebds@gmail.com",
+      From: "ka020694@gmail.com",
+      Subject: "New Lead on Contact Form: - " + val_fullname,
+      Body: email_temp,
+    }).then((message) => {
+      //console.log (message);
+      if (message == "OK") {
+        alert("Your mail has been send. Thank you for connecting.");
+      } else {
+        console.error(message);
+        alert("There is error at sending message. Try otther SMTP server. ");
+      }
+    });
   }
   //DC5FDB6F5F233FCC25B4C7434E6ADF64AD34
 
-  var data = JSON.stringify({
-    from: {
-      email: "confirmation@pepisandbox.com",
-      name: "Flight confirmation",
-    },
-    subject: "Your Barcelona flight e-ticket : BCN2118050657714",
-    content: [
-      {
-        type: "html",
-        value: "Hello Lionel, Your flight for Barcelona is confirmed.",
-      },
-    ],
-    personalizations: [
-      {
-        to: [
-          {
-            email: "ka020694@gmail.com",
-            name: "Lionel Messi",
-          },
-        ],
-      },
-    ],
-  });
-  var xhr = new XMLHttpRequest();
-  xhr.withCredentials = true;
-
-  xhr.addEventListener("readystatechange", function () {
-    if (this.readyState === this.DONE) {
-      console.log(this.responseText);
-    }
-  });
-  xhr.open("POST", "https://emailapi.netcorecloud.net/v5/mail/send");
-  xhr.setRequestHeader("api_key", "95fbcea153c4bb6400fb23bbc1fb0bd6");
-  xhr.setRequestHeader("content-type", "application/json");
-
-  xhr.send(data);
 }
