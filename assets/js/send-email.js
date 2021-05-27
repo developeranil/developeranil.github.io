@@ -125,9 +125,9 @@ function sendMail() {
 </body>\
 </html>';
     Email.send({
-      Host: "smtp.elasticemail.com",
+      Host: "smtp.gmail.com",
       Username: "ka020694@gmail.com",
-      Password: "DC5FDB6F5F233FCC25B4C7434E6ADF64AD34",
+      Password: "@nilKum@r",
       To: "akwebds@gmail.com",
       From: "ka020694@gmail.com",
       Subject: "New Lead on Contact Form: - " + val_fullname,
@@ -138,7 +138,7 @@ function sendMail() {
         alert("Your mail has been send. Thank you for connecting.");
       } else {
         console.error(message);
-        alert("There is error at sending message. ");
+        alert("There is error at sending message. Try otther SMTP server. ");
       }
     });
   }
