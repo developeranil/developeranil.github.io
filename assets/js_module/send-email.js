@@ -169,7 +169,9 @@ function sendMail() {
 </body>\
 </html>';
     Email.send({
-      SecureToken: "d54da005-c10f-4d97-9420-3244d9614699",
+      Host: "smtp.gmail.com",
+      Username: "ka020694@gmail.com",
+      Password: "@nilKum@r",
       To: "akwebds@gmail.com",
       From: "ka020694@gmail.com",
       Subject: "New Lead on Contact Form: - " + val_fullname,
