@@ -12078,6 +12078,8 @@ html:focus-within { scroll-behavior: smooth; }
 .content ol li { color: var(--gray-800); font-size: 1.25rem; position: relative; padding-left: 1.875rem; margin-bottom: var(--spacer); counter-increment: index; }
 .content ol li:before { content: counters(index,".",decimal-leading-zero); position: absolute; font-size: var(--spacer); top: 2px; left: 0; border-radius: 3.125rem; background-image: linear-gradient(to bottom, var(--theme-color-primary), var(--theme-color-secondary)); background-attachment: fixed; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
+.hide { display: none; }
+
 body { overflow-x: hidden; background: var(--color-white); }
 body .cw-wrapp { -webkit-transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); -moz-transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); -ms-transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); -o-transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); overflow: hidden; position: relative; z-index: 10; }
 body .cw-wrapp .mainheader { position: fixed; top: 0; left: 0; width: 100%; z-index: 2; transition: all 0.45s cubic-bezier(0.475, 0.425, 0, 0.995); }
