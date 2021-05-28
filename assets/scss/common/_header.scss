@@ -20,6 +20,9 @@ body{
                     a{
                         img{
                             max-width: 50px;
+                            &.colorLogo{
+                                display: none;
+                            }
                         }
                         .svgText{
                             width: 240px;
@@ -103,6 +106,12 @@ body{
                         a{
                             img{
                                 max-height: 57px;
+                                &.colorLogo{
+                                    display: inline-block;
+                                }
+                                &.logoWhite{
+                                    display: none;
+                                }
                             }
                             .svgText{
                                 display: inline-block;

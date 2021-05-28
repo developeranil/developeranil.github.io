@@ -120,6 +120,7 @@
             flex: 0 0 100%;
             max-width: 100%;
             &:nth-child(2){
+                display: none;
                 .footer-content{
                     ul{
                         li{

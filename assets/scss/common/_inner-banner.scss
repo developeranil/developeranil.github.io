@@ -50,7 +50,7 @@
         }
     }
     @media (max-width: 767px){
-        @include padding(rem(60) 0 rem(40));
+        @include padding(rem(80) 0 rem(20));
         .slider-heading{
             font-size: rem(30);
         }

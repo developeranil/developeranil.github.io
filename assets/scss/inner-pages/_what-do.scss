@@ -1,0 +1,31 @@
+.about-content{
+    .col-sm-4{
+        img{
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 767px){
+        .col-sm-4{
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: rem(20);
+            text-align: center;
+            &.text-right{
+                text-align: center !important;
+                order: 1;
+            }
+        }
+        .col-sm-8{
+            flex: 0 0 100%;
+            max-width: 100%;
+            order: 2;
+        }
+    }
+    @media (max-width: 420px) {
+        .col-sm-4{
+            img{
+                max-width: 90%;
+            }
+        }
+    }
+}

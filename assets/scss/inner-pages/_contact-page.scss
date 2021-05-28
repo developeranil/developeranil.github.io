@@ -62,9 +62,16 @@
             .form-control{
                 height: 50px;
                 border-color: color-tp($theme-primary-color, 0.5);
+                &.mce_inline_error{
+                    border-color: var(--color-red);
+                    background-color: lighten($color: $red, $amount: 40);
+                    margin-top: 0;
+                }
             }            
-            .error{
+            .mce_inline_error{
                 border-color: var(--color-red);
+                color: var(--color-red);
+                margin-top: rem(5);
             }
         }
     }

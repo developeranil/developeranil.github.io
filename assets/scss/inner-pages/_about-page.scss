@@ -7,8 +7,36 @@
         background: var(--gray-300);
         img{
             max-width: 100%;
+        }        
+    } 
+    @media (max-width: 1199px){
+        .col-sm-6{
+            flex: 0 0 100%;
+            max-width: 100%;
+            .mypc-wrapper{
+                width: 400px;
+                height: 400px;
+                @include margin(0 auto 30px);
+            }
         }
-    }    
+    }
+    @media (max-width: 991px){
+        .col-sm-6{
+            .mypc-wrapper{
+                width: 320px;
+                height: 320px;
+            }
+        }          
+    }  
+    
+    @media (max-width: 420px) {
+        .col-sm-6{
+            .mypc-wrapper{
+                width: 290px;
+                height: 290px;
+            }
+        }
+    }
 }
 
 .myProcess{
@@ -32,6 +60,79 @@
             .process-content{
                 flex: 0 0 calc(100% - 200px);
                 max-width: calc(100% - 200px);
+                p{
+                    font-size: rem(20);
+                }
+            }
+        }
+    }
+    @media (max-width: 1199px){
+        .row{
+            justify-content: center;
+            .col-sm-6{
+                flex: 0 0 80%;
+                max-width: 80%;
+                &:nth-child(odd){
+                    .process-item{
+                        .process-content{
+                            order: 1;
+                        }
+                        .process-icon{
+                            order: 2;
+                        }
+                    }
+                }
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .row{
+            .col-sm-6{
+                flex: 0 0 100%;
+                max-width: 100%;
+                .process-item{
+                    .process-content{
+                        p{
+                            font-size: rem(18);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 420px) {
+        .row{
+            .col-sm-6{
+                &:nth-child(odd){
+                    .process-item{
+                        .process-content{
+                            order: 2;
+                        }
+                        .process-icon{
+                            order: 1;
+                        }
+                    }
+                }
+                .process-item{
+                    flex-wrap: wrap;
+                    .process-content{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                    .process-icon{
+                        flex: 0 0 200px;
+                        max-width: 200px;
+                        line-height: 200px;
+                        @include margin(0 auto 20px);
+                        img{
+                            max-height: 130px;
+                        }
+                    }
+                }
             }
         }
     }
