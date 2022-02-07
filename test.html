@@ -7,27 +7,27 @@
     <script type="text/javascript">
         function sendEmail() {
             $.ajax({
-                        type: "POST",
-                        url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                            data: {
-                        'key': 'RPc99bWJFDl6CxFv-51VqA',
-                        'message': {
-                        'from_email': 'ka020694@gmail.com',
-                    'to': [
-                        {
-                            'email': 'akwebds@gmail.com',
-                    'name': 'RECIPIENT NAME(OPTIONAL) ',
-                    'type': 'to'
+            type: "POST",
+            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            data: {
+                "key": "RPc99bWJFDl6CxFv-51VqA",
+                "message": {
+                "from_email": "ka020694@gmail.com",
+                "to": [
+                    {
+                        "email": "akwebds@gmail.com",
+                        "name": "RECIPIENT NAME (OPTIONAL)",
+                        "type": "to"
+                    }
+                    ],
+                "autotext": "true",
+                "subject": "YOUR SUBJECT HERE!",
+                "html": "YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!"
                 }
-        ],
-                'autotext': 'true',
-                'subject': 'YOUR SUBJECT HERE!',
-                'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
-    }
-  }
- }).done(function (response) {
-                    console.log(response); // if you're into that sorta thing
-                });
+            }
+            }).done(function(response) {
+            console.log(response); // if you're into that sorta thing
+            });
         }
     </script>
 </head>
