@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function sendEmail() {
+            $.ajax({
+                        type: "POST",
+                        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                            data: {
+                        'key': 'RPc99bWJFDl6CxFv-51VqA',
+                        'message': {
+                        'from_email': 'ka020694@gmail.com',
+                    'to': [
+                        {
+                            'email': 'akwebds@gmail.com',
+                    'name': 'RECIPIENT NAME(OPTIONAL) ',
+                    'type': 'to'
+                }
+        ],
+                'autotext': 'true',
+                'subject': 'YOUR SUBJECT HERE!',
+                'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+    }
+  }
+ }).done(function (response) {
+                    console.log(response); // if you're into that sorta thing
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        }
+    
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+    	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+    <a href="javascript:;" onclick="sendEmail()">sendemail</a>
+
+    <div id="mc_embed_signup">
+        <form action="https://github.us6.list-manage.com/subscribe/post?u=34b737f3fa21c289b08c43459&amp;id=bcd4137af2"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate>
+            <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">Your Name <span class="asterisk">*</span>
+                    </label>
+                    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Your Email <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE2">Your Company 
+                    </label>
+                    <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE3">Your Current Website </label>
+                    <input type="url" value="" name="MMERGE3" class=" url" id="mce-MMERGE3">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE4">Your Message </label>
+                    <input type="text" value="" name="MMERGE4" class="" id="mce-MMERGE4">
+                </div>
+                <div class="mc-field-group input-group">
+                    <strong>What services are you interested in? </strong>
+                    <ul>
+                        <li><input type="checkbox" value="1" name="group[52997][1]" id="mce-group[52997]-52997-0"><label
+                                for="mce-group[52997]-52997-0">All Services</label></li>
+                        <li><input type="checkbox" value="2" name="group[52997][2]" id="mce-group[52997]-52997-1"><label
+                                for="mce-group[52997]-52997-1">UX / UI Design</label></li>
+                        <li><input type="checkbox" value="4" name="group[52997][4]" id="mce-group[52997]-52997-2"><label
+                                for="mce-group[52997]-52997-2">Front End Development (HTML/CSS)</label></li>
+                        <li><input type="checkbox" value="8" name="group[52997][8]" id="mce-group[52997]-52997-3"><label
+                                for="mce-group[52997]-52997-3">Proagramming (WordPress)</label></li>
+                    </ul>
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_34b737f3fa21c289b08c43459_bcd4137af2" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                        class="button"></div>
+            </div>
+        </form>
+    </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script
+        type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[2] = 'MMERGE2'; ftypes[2] = 'text'; fnames[3] = 'MMERGE3'; ftypes[3] = 'url'; fnames[4] = 'MMERGE4'; ftypes[4] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
+</body>
+
+</html>
